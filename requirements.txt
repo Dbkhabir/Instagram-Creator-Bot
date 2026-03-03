@@ -1,0 +1,36 @@
+# Telegram Bot
+python-telegram-bot==20.7
+python-telegram-bot[webhooks]==20.7
+
+# HTTP Requests
+requests==2.31.0
+httpx==0.25.2
+aiohttp==3.9.1
+
+# Instagram API
+instagrapi==2.0.0
+instagram-private-api==1.6.0.0
+
+# Web Automation (Backup)
+playwright==1.40.0
+selenium==4.16.0
+
+# Captcha Solving
+pytesseract==0.3.10
+Pillow==10.1.0
+opencv-python-headless==4.8.1.78
+
+# Database
+sqlalchemy==2.0.23
+alembic==1.13.0
+
+# Utilities
+python-dotenv==1.0.0
+pydantic==2.5.2
+fake-useragent==1.4.0
+python-dateutil==2.8.2
+pyotp==2.9.0
+
+# Web Server (for Render)
+gunicorn==21.2.0
+uvicorn==0.25.0

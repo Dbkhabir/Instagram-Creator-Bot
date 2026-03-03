@@ -1,0 +1,29 @@
+services:
+  # Web Service for Telegram Bot
+  - type: web
+    name: instagram-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: ALLOWED_USERS
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: instagram-bot-db
+          property: connectionString
+      - key: CAPTCHA_2CAPTCHA_KEY
+        sync: false
+      - key: USE_PROXY
+        value: false
+      - key: LOG_LEVEL
+        value: INFO
+      - key: PYTHON_VERSION
+        value: 3.11.0
+
+databases:
+  - name: instagram-bot-db
+    plan: free
