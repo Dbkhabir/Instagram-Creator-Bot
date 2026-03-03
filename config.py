@@ -12,8 +12,8 @@ class Config:
     """Main configuration class"""
     
     # Telegram Bot Configuration
-    TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "YOUR_BOT_TOKEN_HERE")
-    ALLOWED_USERS = os.getenv("ALLOWED_USERS", "").split(",")  # Comma-separated user IDs
+    TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "7926814511:AAGd1h5ZHbCke6XThnZUKIeg5kHZcUnam18")
+    ALLOWED_USERS = os.getenv("ALLOWED_USERS", "5340147496").split(",")  # Comma-separated user IDs
     
     # Render Deployment (Web service URL for webhook)
     RENDER_EXTERNAL_URL = os.getenv("RENDER_EXTERNAL_URL", "https://your-app.onrender.com")
